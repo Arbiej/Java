@@ -1,0 +1,10 @@
+import java.util.Scanner;
+
+public class LastFigurerOfNumber {
+    public static void main(String[] args) {
+        System.out.println("Type a number");
+        Scanner number= new Scanner(System.in);
+        int lastfigure= number.nextInt();
+        System.out.println("Last figure of yur number is: " + lastfigure%10);
+    }
+}
