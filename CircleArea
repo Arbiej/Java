@@ -1,0 +1,10 @@
+import java.util.Scanner;
+
+public class CircleArea {
+    public static void main(String[] args) {
+        System.out.println("Give the radius od the circle: ");
+        Scanner circle= new Scanner(System.in);
+        int circleRadius= circle.nextInt();
+        System.out.println("Area of the circle to given radius is: " + (3.14*circleRadius*circleRadius));
+    }
+}
