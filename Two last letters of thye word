@@ -1,0 +1,10 @@
+import java.util.Scanner;
+
+public class TwoLastLetters {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String word=scanner.next();
+        int length=word.length();
+        System.out.println("Last two letters of the word is: " + word.charAt(length-2)+ word.charAt(length -1));
+    }
+}
