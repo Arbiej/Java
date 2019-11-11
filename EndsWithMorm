@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class EndsWithMorm {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Type a word");
+        String word = scanner.next();
+        if (word.endsWith("m") || word.endsWith("M")) {
+            System.out.println("Word ends with \"M\" or with  \"m\"      ");
+        } else {
+            System.out.println("Word des not ends with \"M\" or with  \"m\"  ");
+        }
+    }
+}   
