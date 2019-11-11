@@ -1,0 +1,11 @@
+import java.util.Scanner;
+
+public class HelloPlusWord {
+    public static void main(String[] args) {
+
+        Scanner scanner= new Scanner(System.in);
+        System.out.println("Type the word");
+        String word=scanner.next();
+        System.out.println("Hello"+" " + word);
+    }
+}
