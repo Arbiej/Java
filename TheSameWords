@@ -1,0 +1,19 @@
+import org.w3c.dom.ls.LSOutput;
+
+import java.util.Scanner;
+
+public class TheSameWords {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Type first word");
+        String firstWord = scanner.next();
+        System.out.println("Type second word: ");
+        String secondWord = scanner.next();
+        if (firstWord.equals(secondWord)) {
+            System.out.println("Words are the same");
+
+        } else {
+            System.out.println("Words are different");
+        }
+    }
+}
