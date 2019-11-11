@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class DividedByThree {
+    public static void main(String[] args) {
+        Scanner scanner= new Scanner(System.in);
+        System.out.println("Type the number");
+        int number=scanner.nextInt();
+        if (number %3==0){
+            System.out.println("Number divide by 3");
+        }else{
+            System.out.println("Number do not divide by 3");
+        }
+    }
+}
