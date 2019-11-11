@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class NameGender {
+    public static void main(String[] args) {
+        Scanner scanner= new Scanner(System.in);
+        System.out.println("Give your name");
+        String name=scanner.next();
+        if (name.endsWith("a") && (!name.equals("Kuba"))){
+            System.out.println("Female name");
+        }else{
+            System.out.println("Male name");
+        }
+
+    }
+}
