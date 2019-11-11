@@ -1,0 +1,12 @@
+import java.util.Scanner;
+
+public class MaxNumber {
+    public static void main(String[] args) {
+        Scanner scanner=new Scanner(System.in);
+        System.out.println("Type a number");
+        int a = scanner.nextInt();
+        int b =scanner.nextInt();
+        int max= a<b ? b:a;
+        System.out.println(max);
+    }
+}
