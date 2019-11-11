@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class FirstEqualsToLast {
+    public static void main(String[] args) {
+        Scanner scanner=new Scanner(System.in);
+        System.out.println("Type a word");
+        String word=scanner.next();
+        int lenght=word.length();
+        if (word.charAt(0) == word.charAt(lenght-1)){
+            System.out.println("Last and first letter are the same");
+
+        }else{
+            System.out.println("First and last letter are not the same");
+        }
+    }
+}
