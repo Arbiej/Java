@@ -1,0 +1,72 @@
+package model;
+
+import dao.PrisonDataCellBase;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Objects;
+
+public class PrisonCell {
+    private static List<PrisonCell>cellList =new ArrayList<>();
+    private int id;
+    private int sizeOfCell;
+    private List<Customer> customerList;
+
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getSizeOfCell() {
+        return sizeOfCell;
+    }
+
+    public void setSizeOfCell(int sizeOfCell) {
+        this.sizeOfCell = sizeOfCell;
+    }
+
+    public List<Customer> getCustomerList() {
+        return customerList;
+    }
+
+    public void setCustomerList(List<Customer> customerList) {
+        this.customerList = customerList;
+    }
+
+    public PrisonCell(int id, int sizeOfCell, List<Customer> customerList) {
+        this.id = PrisonDataCellBase.getCellList().size()+1;
+        this.sizeOfCell = sizeOfCell;
+        this.customerList = customerList;
+        cellList.add(this);
+
+
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        PrisonCell that = (PrisonCell) o;
+        return id == that.id &&
+                sizeOfCell == that.sizeOfCell &&
+                customerList.equals(that.customerList);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, sizeOfCell, customerList);
+    }
+
+    @Override
+    public String toString() {
+        return "model.PrisonCell{" +
+                "id=" + id +
+                ", sizeOfCell=" + sizeOfCell +
+                ", customerList=" + customerList +
+                '}';
+    }
+}
