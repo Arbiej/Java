@@ -1,0 +1,25 @@
+package model;
+
+import java.time.LocalDate;
+import java.util.List;
+import java.util.UUID;
+
+public class Customer {
+
+    private String name;
+    private String surname;
+    private UUID uuid;
+    private Boolean sex;
+    private List<Sentence> sentenceList;
+    private LocalDate birthDay;
+
+
+    public Customer(String name, String surname, UUID uuid, Boolean sex, List<Sentence> sentenceList, LocalDate birthDay) {
+        this.name = name;
+        this.surname = surname;
+        this.uuid = uuid;
+        this.sex = sex;
+        this.sentenceList = sentenceList;
+        this.birthDay = birthDay;
+    }
+}
